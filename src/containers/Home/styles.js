@@ -76,25 +76,25 @@ export const ContainerItems = styled.div`
   }
 `;
 
-export const MessageForPeoples = styled.div`
-  img {
-    background-color: #1976D2;
-  }
-  @media (max-width: 450px) {
-    display: none;
-  }
-  img {
-    margin-left: 400px;
-    margin-top: 100px;
-    width: 300px;
-  }
-  p {
-    font-size: 30px;
-    position: relative;
-    margin-left: 800px;
-    margin-top: -150px;
-  }
-`;
+// export const MessageForPeoples = styled.div`
+//   img {
+//     background-color: #1976D2;
+//   }
+//   @media (max-width: 450px) {
+//     display: none;
+//   }
+//   img {
+//     margin-left: 400px;
+//     margin-top: 100px;
+//     width: 300px;
+//   }
+//   p {
+//     font-size: 30px;
+//     position: relative;
+//     margin-left: 800px;
+//     margin-top: -150px;
+//   }
+// `;
 
 export const ContainerGraph = styled.div`
 height: 60%;

@@ -15,13 +15,13 @@ import Typography from '@mui/material/Typography';
 import AppBar from '../../components/AppBar'
 
 // ABAIXO IMAGENS USADAS NO PROJETO
-import DistanciaSegura from '../../assets/distancia-segura.svg'
+// import DistanciaSegura from '../../assets/distancia-segura.svg'
 import CovidLogo from '../../assets/covid-image.jpg'
 import Confirmados from '../../assets/confirmados.jpg'
 import PessoaTirandoMascara from '../../assets/people-covid.jpg'
 
 // ESTILOS APLICADOS VIA STYLED-COMPONENTS ABAIXO 
-import { Container, MessageForPeoples, ContainerItems, ContainerGraph, Footer } from './styles'
+import { Container, ContainerItems, ContainerGraph, Footer } from './styles'
 
 
 function Home() {
@@ -100,12 +100,10 @@ function Home() {
         </ContainerItems>
 
       <ContainerGraph>
-      <MessageForPeoples className="MessagePeoples">
-          <img src={DistanciaSegura} alt="distancia-segura"></img>
-          <p>Fique seguro, mantenha o distanciamento social</p>
-        </MessageForPeoples>
+       
       </ContainerGraph>
 
+      
       <Footer>
         <p>© 2022 Copyright - Vinicius Fonseca</p>
       </Footer>
