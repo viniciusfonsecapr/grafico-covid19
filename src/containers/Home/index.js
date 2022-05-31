@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import api from '../../services/api'
 
+// ABAIXO FUNCÕES SALVAS EM ARQUIVOS SEPARADOS
+import { numberFormatter } from "../../functions/numberFormatter";
 
 // ABAIXO ITENS DO MATERIAL UI USADOS
 import Card from '@mui/material/Card';
@@ -19,7 +21,7 @@ import Confirmados from '../../assets/confirmados.jpg'
 import PessoaTirandoMascara from '../../assets/people-covid.jpg'
 
 // ESTILOS APLICADOS VIA STYLED-COMPONENTS ABAIXO 
-import { Container, MessageForPeoples, ContainerItems } from './styles'
+import { Container, MessageForPeoples, ContainerItems, ContainerGraph, Footer } from './styles'
 
 
 function Home() {
@@ -35,6 +37,8 @@ function Home() {
       });
   }, []);
 
+  var moment = require('moment');
+  moment().format();
 
   return (
     <>
@@ -54,8 +58,8 @@ function Home() {
                 Mortes
               </Typography>
               <Typography variant="body1" color="white">
-                Mortes acumulados no mundo: {data?.deaths.value}
-                <p>Atualizado na data {data?.lastUpdate}</p>
+                Mortes Acumuladas no Mundo: {data?.deaths.value.toLocaleString(numberFormatter)}
+                <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
           </Card>
@@ -71,8 +75,8 @@ function Home() {
                 Infectados
               </Typography>
               <Typography variant="body1" color="white">
-                Total de infectados no mundo: {data?.confirmed.value}
-                <p>Atualizado na data {data?.lastUpdate}</p>
+                Total de Infectados no Mundo: {data?.confirmed.value.toLocaleString(numberFormatter)}
+                <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
           </Card>
@@ -88,17 +92,24 @@ function Home() {
                 Recuperados
               </Typography>
               <Typography variant="body1" color="white">
-                Total de Recuperados no Mundo : {data?.recovered.value}
-                <p>Atualizado na data {data?.lastUpdate}</p>
+                Total de Recuperados no Mundo : {data?.recovered.value.toLocaleString(numberFormatter)}
+                <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
           </Card>
         </ContainerItems>
 
-        <MessageForPeoples className="MessagePeoples">
+      <ContainerGraph>
+      <MessageForPeoples className="MessagePeoples">
           <img src={DistanciaSegura} alt="distancia-segura"></img>
           <p>Fique seguro, mantenha o distanciamento social</p>
         </MessageForPeoples>
+      </ContainerGraph>
+
+      <Footer>
+        <p>© 2022 Copyright - Vinicius Fonseca</p>
+      </Footer>
+      
       </Container>
 
     </>

@@ -77,6 +77,9 @@ export const ContainerItems = styled.div`
 `;
 
 export const MessageForPeoples = styled.div`
+  img {
+    background-color: #1976D2;
+  }
   @media (max-width: 450px) {
     display: none;
   }
@@ -93,8 +96,22 @@ export const MessageForPeoples = styled.div`
   }
 `;
 
-export const ContainerLocate = styled.div`
-  display: flex;
-  margin-left: 15px;
-  margin-top: 50px;
-`;
+export const ContainerGraph = styled.div`
+height: 60%;
+margin-top: 50px;
+background-color: #1976D2;
+`
+
+export const Footer = styled.footer` 
+height: 8%;
+background-color: #1976D2;
+border-top: 0.5px solid gray;
+
+p {
+  font-family:'Oswald', sans-serif;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+`
