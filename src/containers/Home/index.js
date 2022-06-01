@@ -1,6 +1,22 @@
 import React, { useEffect, useState } from "react";
 import api from '../../services/api'
 
+// IMPORTAÇÕES CHART.JS
+
+import { faker } from '@faker-js/faker';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
+
+
 // ABAIXO FUNCÕES SALVAS EM ARQUIVOS SEPARADOS
 import { numberFormatter } from "../../functions/numberFormatter";
 
@@ -26,6 +42,47 @@ import { Container, ContainerItems, ContainerGraph, Footer } from './styles'
 
 function Home() {
 
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+  );
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Painel Infectados x Recuperados',
+      },
+    },
+  };
+
+  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+
+
+  const data1 = {
+    labels,
+    datasets: [
+      {
+        label: 'Infectados',
+        data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+        backgroundColor: 'rgba(255,0,0, 1)',
+      },
+      {
+        label: 'Recuperados',
+        data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+        backgroundColor: 'rgba(0, 128, 0, 5)',
+      },
+    ],
+  };
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -54,7 +111,7 @@ function Home() {
               alt="covid-image"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" style={{marginTop: -7}}>
+              <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Mortes
               </Typography>
               <Typography variant="body1" color="white">
@@ -71,7 +128,7 @@ function Home() {
               alt="casos-confirmados"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" style={{marginTop: -7}}>
+              <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Infectados
               </Typography>
               <Typography variant="body1" color="white">
@@ -88,7 +145,7 @@ function Home() {
               alt="pessoa-tirando-mascara"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" style={{marginTop: -7}}>
+              <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Recuperados
               </Typography>
               <Typography variant="body1" color="white">
@@ -99,15 +156,15 @@ function Home() {
           </Card>
         </ContainerItems>
 
-      <ContainerGraph>
-       
-      </ContainerGraph>
+        <ContainerGraph>
+          <Bar options={options} data={data1} />;
+        </ContainerGraph>
 
-      
-      <Footer>
-        <p>© 2022 Copyright - Vinicius Fonseca</p>
-      </Footer>
-      
+
+        <Footer>
+          <p>© 2022 Copyright - Vinicius Fonseca</p>
+        </Footer>
+
       </Container>
 
     </>

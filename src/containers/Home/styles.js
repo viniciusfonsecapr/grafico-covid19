@@ -76,42 +76,27 @@ export const ContainerItems = styled.div`
   }
 `;
 
-// export const MessageForPeoples = styled.div`
-//   img {
-//     background-color: #1976D2;
-//   }
-//   @media (max-width: 450px) {
-//     display: none;
-//   }
-//   img {
-//     margin-left: 400px;
-//     margin-top: 100px;
-//     width: 300px;
-//   }
-//   p {
-//     font-size: 30px;
-//     position: relative;
-//     margin-left: 800px;
-//     margin-top: -150px;
-//   }
-// `;
 
 export const ContainerGraph = styled.div`
 height: 60%;
 margin-top: 50px;
-background-color: #1976D2;
+background-color: white;
 `
 
 export const Footer = styled.footer` 
+
+margin-top: 200px;
 height: 8%;
-background-color: #1976D2;
+background-color: white;
 border-top: 0.5px solid gray;
 
 p {
   font-family:'Oswald', sans-serif;
-  color: white;
+  color: black;
   font-size: 14px;
   margin-top: 20px;
   text-align: center;
 }
 `
+
+// #1976D2 
