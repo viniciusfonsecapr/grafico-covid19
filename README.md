@@ -4,7 +4,6 @@ Desafio Realizado para a vaga de desenvolvedor Front-End na SCOD Brasil.
 
 ## Scripts para executar em seu computador.!
 
-In the project directory, you can run:
 ### Clone o projeto 
 
 ### `yarn` para instalar as dependencias do projeto. (Em caso de erro irei deixar as dependendicas separadas para instalação manual)
