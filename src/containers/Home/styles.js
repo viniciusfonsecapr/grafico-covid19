@@ -110,4 +110,11 @@ export const Footer = styled.footer`
     margin-top: 10px;
     text-align: center;
   }
+
+  a {
+    background-color: white;
+    font-size: 10px;
+    height:10px;
+    display: none;
+  }
 `;

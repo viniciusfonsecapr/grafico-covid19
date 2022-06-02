@@ -123,7 +123,7 @@ function Home() {
     <>
       <div><AppBar></AppBar></div>
 
-      <Container className="containerG">
+      <Container>
         <ContainerItems className="containerItems">
           <Card className="card1" sx={{ maxWidth: 500, width: 350, backgroundColor: "black", color: "white", marginTop: 5, }}>
             <CardMedia
@@ -186,6 +186,7 @@ function Home() {
 
         <Footer>
           <p>© 2022 Copyright - Vinicius Fonseca</p>
+          <a target="_blank" href="https://icons8.com/icon/HFM0KDhZC8E5/covid19" rel="noreferrer">Covid19 icon by</a>  <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
         </Footer>
       </Container>
 
