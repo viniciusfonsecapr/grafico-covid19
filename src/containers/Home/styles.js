@@ -76,27 +76,38 @@ export const ContainerItems = styled.div`
   }
 `;
 
+export const ContainerGraph1 = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  background-color: white;
+  height: 490px;
 
-export const ContainerGraph = styled.div`
-height: 60%;
-margin-top: 50px;
-background-color: white;
-`
+  @media (max-width: 420px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 1000px;
+  }
+  div {
+    width: 500px;
+  }
 
-export const Footer = styled.footer` 
+`;
+export const Footer = styled.footer`
+  margin-top: 50px;
+  height: 20px;
+  background-color: white;
+  border-top: 0.1px solid gray;
 
-margin-top: 200px;
-height: 8%;
-background-color: white;
-border-top: 0.5px solid gray;
-
-p {
-  font-family:'Oswald', sans-serif;
-  color: black;
-  font-size: 14px;
-  margin-top: 20px;
-  text-align: center;
-}
-`
-
-// #1976D2 
+  p {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+`;
