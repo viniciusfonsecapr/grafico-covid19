@@ -2,6 +2,8 @@
 
 Desafio Realizado para a vaga de desenvolvedor Front-End na SCOD Brasil. 
 
+Live Demo: https://estatisticas-covid19.netlify.app/
+
 ## Scripts para executar em seu computador.!
 
 ### Clone o projeto 
@@ -10,7 +12,7 @@ Desafio Realizado para a vaga de desenvolvedor Front-End na SCOD Brasil.
 
 ### `yarn start`
 
-App web estára rodando no localhost na port 3000, mas haverá link para um Site EXCLUSIVO do APP.\
+App web estára rodando no localhost na port 3000.
 Abrir [http://localhost:3000](http://localhost:3000) em seu Browser(Navegador).
 
 ## Learn More
