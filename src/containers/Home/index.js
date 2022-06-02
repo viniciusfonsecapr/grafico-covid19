@@ -136,8 +136,8 @@ function Home() {
               <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Mortes
               </Typography>
-              <Typography variant="body1" color="white">
-                Mortes Acumuladas no Mundo: {data?.deaths.value.toLocaleString(numberFormatter)}
+              <Typography component="span" variant="body1" color="white">
+                <p>Mortes Acumuladas no Mundo: {data?.deaths.value.toLocaleString(numberFormatter)}</p>
                 <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
@@ -153,8 +153,8 @@ function Home() {
               <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Infectados
               </Typography>
-              <Typography variant="body1" color="white">
-                Total de Infectados no Mundo: {data?.confirmed.value.toLocaleString(numberFormatter)}
+              <Typography component="span" variant="body1" color="white">
+                <p>Total de Infectados no Mundo: {data?.confirmed.value.toLocaleString(numberFormatter)}</p>
                 <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
@@ -170,8 +170,8 @@ function Home() {
               <Typography gutterBottom variant="h5" component="div" style={{ marginTop: -7 }}>
                 Recuperados
               </Typography>
-              <Typography variant="body1" color="white">
-                Total de Recuperados no Mundo : {data?.recovered.value.toLocaleString(numberFormatter)}
+              <Typography component="span" variant="body1" color="white">
+                <p>Total de Recuperados no Mundo : {data?.recovered.value.toLocaleString(numberFormatter)}</p>
                 <p>Atualizado na data {moment().format("DD/MM/yyyy HH:mm")}</p>
               </Typography>
             </CardContent>
