@@ -1,7 +1,11 @@
 
 <h1 align="center">App Covid-19</h1>
 # App COVID-19 - Estatisticas e Números pelo Mundo - Desafio para a Vaga de Frontend na SCOD Brasil// 
+
+<br>
+
 Live Demo: https://estatisticas-covid19.netlify.app/
+
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -17,7 +21,7 @@ Live Demo: https://estatisticas-covid19.netlify.app/
 ## :dart: About ##
 Desafio Realizado para a vaga de desenvolvedor Front-End na SCOD Brasil. 
 
-Aonde foi feito um Site para mostrar as estatisticas e dados sobre o covid-19 no mundo.
+Aonde foi feito um Site para mostrar as estatisticas e dados sobre o covid-19 no mundo consumindo a api: https://covid19.mathdro.id/api
 
 ## :sparkles: Features ##
 
@@ -33,6 +37,12 @@ The following tools were used in this project:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
 - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/html/)  
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
+- [Moment](https://momentjs.com/)
+- [Charjs 2](https://www.chartjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Material UI](https://mui.com/pt/)
+- 
 
 
 
